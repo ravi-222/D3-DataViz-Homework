@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Homework #2: D3 Linking - CSE 578 - Spring 2023</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+
+
+    <style>
+        .container {
+            margin: auto;
+            max-width: 1920px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section center">
+        <h1 class="text-center">Homework #3: D3 Joins</h1>
+        <h3 class="text-center">Ravindersingh Anand - rganand@asu.edu</h3>
+    </div>
+    <div class="container section">
+        <div class="row control-panel">
+            <h5>Controls</h5>
+            <div class="col input-field">
+                <select id="datasetSelect">
+                    <option value="" disabled selected>Choose your dataset</option>
+                    <option value="penguins">Penguins Cleaned</option>
+                    <option value="pokemon">Pokemon with Stats</option>
+                    <option value="test1">Test1</option>
+                    <option value="test2">Test2</option>
+                </select>
+                <label>Dataset</label>
+            </div>
+           
+            <div class="col input-field">
+                <select id="xAttributeSelect">
+                    <option value="" disabled selected>Select...</option>
+                </select>
+                <label>X Attribute</label>
+            </div>
+            
+            <div class="col input-field">
+                <select id="yAttributeSelect">
+                    <option value="" disabled selected>Select...</option>
+                </select>
+                <label>Y Attribute</label>
+            </div>
+            
+            <div class="col input-field">
+                <select id="colorSelect">
+                    <option value="" disabled selected>Select...</option>
+                </select>
+                <label>Color</label>
+            </div>
+            
+            <div class="col input-field">
+                <select id="boxplotSelect">
+                    <option value="" disabled selected>Select...</option>
+                </select>
+                <label>Boxplot</label>
+            </div>
+            <div class="col input-field dataCount">
+                Count: 0
+            </div>
+        </div>
+       <div class="row">
+        <div class="col s12 l6">
+            <div class="spCanvas">
+            </div>
+        </div>
+        <div class="col s12 l6">
+            <div class="bpCanvas">
+            </div>
+        </div>
+       </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="graph.js"></script> -->
+    <script src="rganand.js"></script>
+</body>
+
+</html>
